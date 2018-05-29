@@ -1,0 +1,2 @@
+app_name = multiscale
+cli_args = '--error'
