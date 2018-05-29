@@ -13,6 +13,8 @@
 
 class MultiscaleApp;
 
+
+
 template <>
 InputParameters validParams<MultiscaleApp>();
 

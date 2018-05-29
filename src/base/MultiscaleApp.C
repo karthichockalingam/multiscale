@@ -4,6 +4,15 @@
 #include "ModulesApp.h"
 #include "MooseSyntax.h"
 
+
+
+/*
+ * Multiapps
+ */
+
+#include "QuadraturePointMultiApp.h"
+
+
 template <>
 InputParameters
 validParams<MultiscaleApp>()
@@ -36,9 +45,9 @@ MultiscaleApp::registerApps()
 }
 
 void
-MultiscaleApp::registerObjects(Factory & /*factory*/)
+MultiscaleApp::registerObjects(Factory & factory)
 {
-  /* Uncomment Factory parameter and register your new production objects here! */
+  registerMultiApp(QuadraturePointMultiApp);
 }
 
 void
